@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Debug */
+.border {
+    border: 1px solid black;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* body {
+    background-color: green;
+} */
+
+/* Utility */
+li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #6b6c6c;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* btn */
+.btn {
+    width: 230px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    background-color: #20ac97;
+}
+
+/* Header */
+header {
+    display: flex;
+    background-color: #ebe9ed;
+    background-image: url('../img/background-pattern-wavify.png');
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .logo img {
+    height: 30px;
+    width: 160px;
+}
+
+.nav .nav-center i {
+    font-size: 10px;
+}
+
+/* Header Jumbotron */
+.jumbotron {
+    margin-top: 30px;
+    height: 100%;
+}
+
+.cl_left,
+.cl_right {
+    float: left;
+    width: 50%;
+    height: 450px;
+}
+
+.cl_left {
+    display: flex;
+    align-items: center;
+}
+.cl_left .jumbo-text {
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.cl_left .jumbo-text h1 {
+    font-family: 'Playfair Display', serif;
+}
+.cl_left .jumbo-text p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.cl_right .img-rose {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid green;
+}
+.cl_right .img-rose img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.cl_right .img-rose .z-1 {
+    width: 60%;
+    height: 70%;
+    border: 1px solid red;
+}
+.cl_right .img-rose .z-2 {
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+/* Nav vertical */
+.nav-vertical {
+    position: fixed;
+    right: 0;
+    top: 10%;
+    background-color:white;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-vertical i {
+    padding: 8px 5px;
+    display: block;
+}
+
+/* Section Data */
+.data {
+    height: 1000px;
+}
