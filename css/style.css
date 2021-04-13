@@ -314,7 +314,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 .box-course .info-course .price-course {
     font-weight: bold;
@@ -346,13 +346,74 @@ header {
 
 /* Book*/
 .book-store {
-    height: 500px;
+    height: 350px;
     width: 100%;
 }
+.book-store .top-book-store {
+    height: 300px;
+}
+.book-store .bottom-book-store {
+    height: calc(350px - 300px);
+    display: flex;
+    align-items: center;
+}
+
 .book-store .cl_left_45 {
     width: 45%;
 }
+.book-store .cl_left_45 .top-book-store {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.book-store .cl_left_45 .top-book-store h2 {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.book-store .cl_left_45 .top-book-store h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
 
 .book-store .cl_right_55 {
     width: 55%;
+}
+.book-store .cl_right_55 .top-book-store,
+.book-store .cl_right_55 .bottom-book-store {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-store .cl_right_55 .box-book {
+    height: 100%;
+    width: 45%;
+}
+
+.book-store .cl_right_55 .top-book-store .box-book img {
+    height: 100%;
+    width: 100%;
+}
+
+.book-store .cl_right_55 .bottom-book-store .box-book {
+    text-align: center;
+}
+.book-store .cl_right_55 .bottom-book-store .box-book h1 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.book-store .cl_right_55 .bottom-book-store .box-book .price-book {
+    font-weight: bold;
+    font-size: 20px;
+}
+.book-store .cl_right_55 .bottom-book-store .box-book .price-book .min-px {
+    font-size: 15px;
+}
+
+/* Collaborate */
+.collaborate {
+    margin: 10px 0;
+    height: 200px;
 }
