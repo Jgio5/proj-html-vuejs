@@ -5,18 +5,18 @@
 }
 
 /* Debug */
-/* .debug-border {
+.debug-border {
     border: 1px solid black;
 }
 
 .debug-zone {
     background-color: yellow;
-} */
+}
 
-/* [class^="cl_left"],
+[class^="cl_left"],
 [class^="cl_right"] {
     border: 1px solid orange;
-} */
+}
 
 /* Utility */
 .container {
@@ -47,6 +47,10 @@ a {
     width: 50%;
 }
 
+.green {
+    color: #20ac97;
+}
+
 /* btn */
 .btn {
     width: 230px;
@@ -54,6 +58,7 @@ a {
     border-radius: 5px;
     color:white;
     font-weight: bold;
+    text-align: center;
     background-color: #20ac97;
 }
 
@@ -105,6 +110,7 @@ header {
     justify-content: space-between;
 }
 .cl_left_50 .jumbo-text h1 {
+    font-weight: 500;
     font-family: 'Playfair Display', serif;
 }
 .cl_left_50 .jumbo-text p {
@@ -180,8 +186,8 @@ header {
 
 /* About me */
 .about_me {
-    height: 550px;
-    margin-bottom: 40px;
+    height: 100%;
+    margin-bottom: 100px;
 }
 
 .about_me .subtitle {
@@ -200,6 +206,7 @@ header {
     margin-bottom: 30px;
 }
 .about_me .pt-top .cl_left_50 h1 {
+    font-weight: 500;
     font-family: 'Playfair Display', serif;
 }
 .about_me .pt-top .cl_right_50 {
@@ -208,9 +215,7 @@ header {
 .about_me .pt-top .cl_right_50 h3 {
     margin-bottom: 10px;
 }
-.about_me .pt-top .cl_right_50 .green {
-    color: #20ac97;
-}
+
 .about_me .pt-top .cl_right_50 p {
     color: #9aa2a6;
 }
@@ -267,4 +272,87 @@ header {
     font-family: 'Roboto', sans-serif
 }
 
+/* Curses */
+.course {
+    margin: 50px 0;
+}
 
+.course .text-course {
+    text-align: center;
+}
+.course .text-course p {
+    font-size: 15px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.course .text-course h1 {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+}
+
+.course .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course .row .box-course {
+    height: 350px;
+    width: 300px;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.box-course .img-course {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.box-course .info-course {
+    height: calc(350px - 200px - 5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+.box-course .info-course .price-course {
+    font-weight: bold;
+    font-size: 20px;
+}
+.box-course .info-course .price-course .min-px {
+    font-size: 15px;
+}
+.box-course .info-course .title-course {
+    margin: 15px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.box-course .info-lessons-course {
+    display: flex;
+    margin-top: 10px;
+}
+.box-course .info-lessons-course .lessons-course {
+    margin-right: 20px;
+}
+
+.course .btn-course {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Book*/
+.book-store {
+    height: 500px;
+    width: 100%;
+}
+.book-store .cl_left_45 {
+    width: 45%;
+}
+
+.book-store .cl_right_55 {
+    width: 55%;
+}
