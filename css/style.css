@@ -5,21 +5,25 @@
 }
 
 /* Debug */
-.border {
+/* .debug-border {
     border: 1px solid black;
 }
 
+.debug-zone {
+    background-color: yellow;
+} */
 
-.container {
-    margin: 0 auto;
-    width: 80%;
-}
-
-/* body {
-    background-color: green;
+/* [class^="cl_left"],
+[class^="cl_right"] {
+    border: 1px solid orange;
 } */
 
 /* Utility */
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
 li {
     list-style: none;
     display: inline-block;
@@ -36,6 +40,11 @@ a {
 }
 .capitalize {
     text-transform: capitalize;
+}
+
+.cl_left_50,
+.cl_right_50 {
+    width: 50%;
 }
 
 /* btn */
@@ -75,56 +84,53 @@ header {
 /* Header Jumbotron */
 .jumbotron {
     margin-top: 30px;
-    height: 100%;
-}
-
-.cl_left,
-.cl_right {
-    float: left;
-    width: 50%;
     height: 450px;
 }
 
-.cl_left {
+[class^="cl_left"],
+[class^="cl_right"] {
+    float: left;
+    height: 100%;
+}
+
+.jumbotron .cl_left_50 {
     display: flex;
     align-items: center;
 }
-.cl_left .jumbo-text {
+.cl_left_50 .jumbo-text {
     height: 70%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid black;
 }
-.cl_left .jumbo-text h1 {
+.cl_left_50 .jumbo-text h1 {
     font-family: 'Playfair Display', serif;
 }
-.cl_left .jumbo-text p {
+.cl_left_50 .jumbo-text p {
     font-family: 'Roboto', sans-serif;
 }
 
 
-.cl_right .img-rose {
+.cl_right_50 .img-rose {
     position: relative;
     height: 100%;
     width: 100%;
-    border: 1px solid green;
 }
-.cl_right .img-rose img {
+.cl_right_50 .img-rose img {
     position: absolute;
     bottom: 0;
     left: 0;
 }
-.cl_right .img-rose .z-1 {
-    width: 60%;
+.cl_right_50 .img-rose .z-1 {
+    width: 65%;
     height: 70%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
-.cl_right .img-rose .z-2 {
-    width: 50%;
+.cl_right_50 .img-rose .z-2 {
+    width: 60%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* Nav vertical */
@@ -147,6 +153,7 @@ header {
     display: flex;
     align-items: center;
     height: 150px;
+    margin: 5px 0;
 }
 
 .data .container {
@@ -154,19 +161,110 @@ header {
     justify-content: space-around;
 }
 
-.box {
+.data .box {
     width: calc(100% / 4);
     text-align: center;
     padding: 5px 0;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
     border-left: 1px dotted  #20ac97;
 }
-.box h2 {
+.data .box h2 {
     color: #20ac97;
+    padding-bottom: 10px;
 }
-.box p {
+
+.data .box-last {
+    border-right: 1px dotted #20ac97;
+}
+
+/* About me */
+.about_me {
+    height: 550px;
+    margin-bottom: 40px;
+}
+
+.about_me .subtitle {
+    height: 30px;
+}
+.about_me .subtitle h2 {
+    font-size: 15px;
+    line-height: 30px;
+    color: #20ac97;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
-.box-last {
-    border-right: 1px dotted #20ac97;
+
+.about_me .pt-top {
+    height: 180px;
+    margin-bottom: 30px;
 }
+.about_me .pt-top .cl_left_50 h1 {
+    font-family: 'Playfair Display', serif;
+}
+.about_me .pt-top .cl_right_50 {
+    font-family: 'Roboto', sans-serif;
+}
+.about_me .pt-top .cl_right_50 h3 {
+    margin-bottom: 10px;
+}
+.about_me .pt-top .cl_right_50 .green {
+    color: #20ac97;
+}
+.about_me .pt-top .cl_right_50 p {
+    color: #9aa2a6;
+}
+
+.about_me .pt-bottom {
+    height: calc(550px - 30px - 180px);
+}
+.about_me .pt-bottom .cl_left_55 {
+    position: relative;
+    width: 55%;
+}
+.about_me .pt-bottom .cl_left_55 .img-youtube{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about_me .pt-bottom .cl_left_55 .icon-youtube{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.about_me .pt-bottom .cl_right_45 {
+    width: 45%;
+    position: relative;
+}
+.about_me .pt-bottom .cl_right_45 .cit {
+    padding-left: 10%;
+    padding-right: 30%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.about_me .pt-bottom .cl_right_45 .cit p{
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+.about_me .pt-bottom .cl_right_45 .cit  img{
+    height: 20px;
+    width: 30px;
+    margin: 5px 0;
+}
+.about_me .pt-bottom .cl_right_45 .cit h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.about_me .pt-bottom .cl_right_45 .cit p:last-child{
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif
+}
+
+
