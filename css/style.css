@@ -60,6 +60,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .nav .logo img {
@@ -143,5 +144,29 @@ header {
 
 /* Section Data */
 .data {
-    height: 1000px;
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.data .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: calc(100% / 4);
+    text-align: center;
+    padding: 5px 0;
+    border-left: 1px dotted  #20ac97;
+}
+.box h2 {
+    color: #20ac97;
+}
+.box p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.box-last {
+    border-right: 1px dotted #20ac97;
 }
