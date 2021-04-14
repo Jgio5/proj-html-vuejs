@@ -5,7 +5,7 @@
 }
 
 /* Debug */
-/* .debug-border {
+.debug-border {
     border: 1px solid black;
 }
 
@@ -16,7 +16,7 @@
 [class^="cl_left"],
 [class^="cl_right"] {
     border: 1px solid orange;
-} */
+}
 
 /* Utility */
 body {
@@ -430,3 +430,78 @@ header {
     margin: 10px 0;
     opacity: 0.4;
 }
+
+/* Stories */
+.stories {
+    position: relative;
+    height: 500px;
+    margin: 20px 0;
+}
+
+.stories .cl_left_50 {
+    background-color: #ebe9ed;
+    background-image: url('../img/background-pattern-wavify.png');
+    text-align: center;
+}
+.stories .cl_left_50 .real-stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin: 0 10%;
+    padding: 0 15%;
+}
+
+.stories .cl_left_50 .real-stories .author .img-circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.stories .cl_left_50 .real-stories .author h1 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.stories .cl_left_50 .real-stories .author p {
+    font-size: 15px;
+    color: grey;
+}
+
+.stories .cl_right_50 {
+    background-image: url('../img/home-movation-testimonial-image.jpg');
+}
+
+.stories .stories-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 9px 25px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #20ac97; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  #20ac97; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(32, 199, 199, 0.65); 
+  }
