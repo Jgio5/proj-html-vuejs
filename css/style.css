@@ -5,7 +5,7 @@
 }
 
 /* Debug */
-.debug-border {
+/* .debug-border {
     border: 1px solid black;
 }
 
@@ -16,7 +16,7 @@
 [class^="cl_left"],
 [class^="cl_right"] {
     border: 1px solid orange;
-}
+} */
 
 /* Utility */
 body {
@@ -49,6 +49,14 @@ a {
 .cl_left_50,
 .cl_right_50 {
     width: 50%;
+}
+
+.font-play {
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+}
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
 }
 
 .green {
@@ -481,7 +489,52 @@ header {
     background-color: white;
 }
 
+/* Blog */
+.blog .title-blog p {
+    font-weight: bold;
+}
 
+.blog .row .box-blog {
+    height: 350px;
+    width: 250px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.blog .row .box-blog .img-blog{
+    height: 45%;
+}
+.blog .row .box-blog .img-blog img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.blog .row .box-blog .text-blog {
+    height: 55%;
+}
+.blog .row .box-blog .text-blog p {
+    font-size: 15px;
+    color: grey;
+    margin: 10px 0;
+}
+.blog .row .box-blog .text-blog h1 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.blog .all-posts {
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    background-color: black;
+    height: 400px;
+}
 
 /* Scrollbar */
 /* width */
