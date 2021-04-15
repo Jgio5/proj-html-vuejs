@@ -31,7 +31,6 @@ body {
 li {
     list-style: none;
     display: inline-block;
-    margin-left: 10px;
 }
 
 a {
@@ -96,6 +95,11 @@ header {
 
 .nav .nav-center i {
     font-size: 10px;
+    margin-right: 10px;
+}
+
+.nav .social-network li {
+    margin-left: 10px;
 }
 
 /* Header Jumbotron */
@@ -531,9 +535,38 @@ header {
 
 /* Footer */
 footer {
+    font-family: 'Lato', sans-serif;
     margin-top: 80px;
+    padding: 20px 0;
+    color: grey;
     background-color: black;
-    height: 400px;
+}
+
+footer h1 {
+    color: white;
+    font-size: 20x;
+}
+footer .row {
+    height: 160px;
+}
+
+footer .row .cl_right_50 .cl_left_50 li,
+footer .row .cl_right_50 .cl_right_50 li {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ footer .row .cl_right_50 .cl_left_50 li {
+    width: 49%;
+    display: inline-block;
+}
+
+footer .social-network-footer i {
+    margin-right: 10px;
+}
+
+footer .copyright {
+    text-align: center;
 }
 
 /* Scrollbar */
@@ -544,7 +577,7 @@ footer {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #20ac97; 
+    box-shadow: inset 0 0 5px rgba(32, 199, 199, 0.65); 
     border-radius: 10px;
   }
    
