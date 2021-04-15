@@ -31,21 +31,19 @@
                     </div>
                     <div class="nav-center">
                         <ul>
-                            <li><a href="#">Home <i class="fas fa-chevron-down"></i> </a></li>
-                            <li><a href="#">Pages <i class="fas fa-chevron-down"></i> </a></li>
-                            <li><a href="#">Courses <i class="fas fa-chevron-down"></i> </a></li>
-                            <li><a href="#">Features <i class="fas fa-chevron-down"></i> </a></li>
-                            <li><a href="#">Blog <i class="fas fa-chevron-down"></i> </a></li>
-                            <li><a href="#">Shop <i class="fas fa-chevron-down"></i> </a></li>
+                            <li v-for= "(nav) in navs">
+                                {{ nav }} <i class="fas fa-chevron-down"></i>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="social-network">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></i></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i></a></i></li>
+                        <ul v-for="headerIcon in headerIcons">
+                            <li>
+                                <a href="#">
+                                    <i :class="headerIcon"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -403,9 +401,13 @@
                 <div class ="row">
                     <div class="cl_left_50">
                         <h1>Address</h1>
-                        <p>382 NE 191st St # 87394 Miami, Fl 33179-3899</p>
-                        <p>+1(305)547-9909(9an - 5pm EST,Monday - Friday)</p>
-                        <p>support@maxcoach.com</p>
+                        <ul>
+                            <li v-for="office in offices">
+                                <p>{{office.street}}</p>
+                                <p>{{office.hours}}</p>
+                                <p>{{office.email}}</p>
+                            </li>
+                        </ul>
                     </div>
 
                     <div class="cl_right_50">
@@ -413,12 +415,9 @@
                             <h1>Explore</h1>
                             <nav>
                                 <ul>
-                                    <li>Start here</li>
-                                    <li>Blog</li>
-                                    <li>About us</li>
-                                    <li>Success story</li>
-                                    <li>Courses</li>
-                                    <li>Contact us</li>
+                                    <li v-for= "(footerExplore) in footerExplores">
+                                        {{ footerExplore }}
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -426,10 +425,9 @@
                             <h1>Information</h1>
                             <nav>
                                 <ul>
-                                    <li>Membership</li>
-                                    <li>Purchase guide</li>
-                                    <li>Privacy policy</li>
-                                    <li>Terms of service</li>
+                                    <li v-for= "(footerInformation) in footerInformations">
+                                        {{ footerInformation }}
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -438,10 +436,9 @@
 
                 <div class="social-network-footer">
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></i></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></i></li>
+                        <li v-for="footerIcon in footerIcons">
+                            <i :class="footerIcon"></i>
+                        </li>
                     </ul>
                 </div>
 
