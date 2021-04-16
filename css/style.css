@@ -510,6 +510,7 @@ header {
 
 /* Footer */
 footer {
+    position: relative;
     margin-top: 80px;
     padding: 20px 0;
     color: grey;
@@ -542,6 +543,17 @@ footer .social-network-footer i {
 
 footer .copyright {
     text-align: center;
+}
+
+footer .arrow-up i {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #20ac97;
 }
 
 /* Nav vertical */
@@ -644,6 +656,10 @@ background: rgba(32, 199, 199, 0.65);
 footer li:hover {
     cursor: pointer;
     color: white;
+}
+
+footer .arrow-up:hover {
+    cursor: pointer;
 }
 
 /* Hover Vertical */
